@@ -4,7 +4,7 @@
 <!-- 2020-05-27 Wed 14:56 -->
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
-<title>Tutorial on Distributed Constraint Optimization <br/> for the Internet-of-Things (DCOP4IoT)</title>
+<title>Tutorial on Multi-Agent Distributed Constrained Optimization</title>
 <meta name="generator" content="Org mode" />
 <meta name="author" content="Gauthier Picard" />
 <link rel="stylesheet" type="text/css" href="styles/bigblow/css/htmlize.css"/>
@@ -67,9 +67,9 @@ for the JavaScript code in this tag.
 </head>
 <body>
 <div id="content">
-<h1 class="title">Tutorial on Distributed Constraint Optimization <br/> for the Internet-of-Things (DCOP4IoT)
+<h1 class="title">Tutorial on Multi-Agent Distributed Constrained Optimization
 <br>
-<span class="subtitle">at ECAI 2020, the 24th European Conference on Artificial Intelligence,</span>
+<span class="subtitle">at AAMAS 2022, the 21st International Conference on Autonomous Agents and Multiagent Systems</span>
 </h1>
 <div id="table-of-contents">
 <h2>Table of Contents</h2>
@@ -88,8 +88,10 @@ for the JavaScript code in this tag.
 <h2 id="short-description"><a id="org82e87e0"></a><span class="section-number-2">1</span> Short description</h2>
 <div class="outline-text-2" id="text-short-description">
 <p>
-The ever-growing nature of the Internet-of-Things (IoT) and related application domains (Smart home, Smart buildings, etc.) with numerous objects and configurations require more and more autonomy and coordination. Multi-agent systems are a suitable paradigm to model and develop applications and infrastructure to implement such IoT environments. Within the multi-agent techniques, distributed constraint reasoning is a relevant approach to model complex problems and decentralize decisions in a coordinated way. The workshop proposes to review some DCOP solution methods relevant for the IoT context, to model a real smart home case study, and finally to program and deploy DCOP solutions methods on a real IoT environment composed of Raspberry Pis.
-</p>
+Teams of agents often have to coordinate their decisions in a distributed manner to achieve both individual and shared goals. Examples include service-oriented computing, sensor network problems, and smart devices coordination homes problems. The resulting Distributed Constraint Optimization Problem (DCOP) is NP-hard to solve, and the multi-agent coordination process non-trivial. Examples include service-oriented computing, sensor network problems, smart devices coordination homes problems or collective of autonomous robots. The resulting Distributed Constraint Optimization Problem (DCOP) is NP-hard to solve, and the multi-agent coordination process non-trivial.
+
+The Tutorial on Multi-Agent Distributed Constrained Optimization is composed of two parts and will provide an overview of DCOPs, focusing on its algorithms and some of its applications. In the first theoretical part, we will present an accessible and structured overview of the core concepts and models. We will also expound the available optimal and suboptimal approaches to solve DCOPs. We will discuss recent extensions to the DCOP framework to capture agents acting in a dynamic environment and/or using asymmetric costs/rewards.
+In the second practical part, we will invite the attendance to model some sample problems coming from real applications, and discuss the relevant solutions methods. Some code and executable examples, developed using the python library pyDCOP, will be provided and analyzed. The tutorial will conclude with the most recurrent challenges and open questions.</p>
 </div>
 </div>
 
@@ -97,7 +99,7 @@ The ever-growing nature of the Internet-of-Things (IoT) and related application 
 <h2 id="Outline"><a id="org70dc8af"></a><span class="section-number-2">2</span> Outline</h2>
 <div class="outline-text-2" id="text-Outline">
 <p>
-The Tutorial on Distributed Constraint Optimization for the Internet-of-Things is expected to be a half-day tutorial alternates both theoretical and practical concepts on DCOP models, algorithms and applications to the Internet-of-Things field. Some time is devoted to apply these concepts on Raspberry Pis.
+The Tutorial on Multi-Agent Distributed Constrained Optimization is expected to be a half-day tutorial alternates both theoretical and practical concepts on DCOP models, algorithms and applications to the Internet-of-Things field. Some time is devoted to apply these concepts on Raspberry Pis.
 </p>
 
 <p>
@@ -161,21 +163,23 @@ We are thus confident about the attractiveness of our tutorial for the AAMAS aud
 <h3 id="gauthier"><a id="orgd8d1d82"></a>Gauthier Picard</h3>
 <div class="outline-text-3" id="text-gauthier">
 <p>
-<b>Gauthier Picard</b> received a Ph.D. degree in Computer Science from the University of Toulouse in 2004, and the Habilitation degree in Computer Science from the University of Saint-Etienne in 2014. He is currently an associate professor in Computer Science at MINES Saint-Etienne and a full researcher at Laboratoire Hubert Curien UMR CNRS 5516. His research focuses on cooperation and adaptation in multiagent systems and distributed optimization with applications to smart grids, aircraft design, ambient intelligence, and intelligent transport. He has been in charge of the following organization activities: SASO (2016, PC Chair), SASO (2015, WS Chair), JFSMA (2015, Organization Chair), SASO (2014, Doctoral Consortium Chair), SASO (2012, Organization Chair), WI-IAT (2011, Demo Chair),  ESAW'09 (2008-2009, Chair).
-He has also previously been member of the organization committees of the following events: ESAW (2004), JFSMA (2007), Web Intelligence Summer School (2009), EASSS (2010), MALLOW (2010), WI-IAT (2011). 
-</p>
-
+<b>Gauthier Picard</b> received a Ph.D. degree in Computer Science from the University of Toulouse in 2004, and the Habilitation degree in Computer Science from the University of Saint-Etienne in 2014. He was full professor in Computer Science at MINES Saint-Etienne and a full researcher at Laboratoire Hubert Curien UMR CNRS 5516. 
+Since 2020, he is Senior Research Fellow at ONERA, The French Aerospace Lab. His research focuses on cooperation and adaptation in multi-agent systems and distributed optimization with applications to aircraft design, ambient intelligence, and satellite constellation operations, and unmanned automated fleet operations.</p>
+<p>He has been in charge of the following organization activities: SASO (2016, PC Chair), SASO (2015, WS Chair), JFSMA (2015, Organization Chair), SASO (2014, Doctoral Consortium Chair), SASO (2012, Organization Chair), WI-IAT (2011, Demo Chair), ESAW'09 (2008-2009, Chair). He has also previously been member of the organization committees of the following events: ESAW (2004), JFSMA (2007), Web Intelligence Summer School (2009), EASSS (2010), MALLOW (2010), WI-IAT (2011).</p>
 <p>
-Gauthier Picard teaches <a href="http://www.emse.fr/~picard/cours/ai/">Artificial Intelligence</a>, Multi-Agent Systems and DCOPs for Master-level students for more than 10 years, at Ecole des Mines de Saint-Etienne. He is also coordinating the <a href="http://www.mines-stetienne.fr/cps2">International Master Track on Cyber-Physical and Social System</a>. Some sample slides and pratical works are available online, on <a href="http://www.emse.fr/~picard/cours/mas/lecture-DCSP-2015.pdf">DCSP and DCOP</a>, <a href="http://www.emse.fr/~picard/cours/3A/%20masterWI/dcsp/">Programming DCSP with Jason</a> or <a href="http://www.emse.fr/~picard/cours/3A/masterWI/coursSO.pdf">Self-organization in Multi-Agent Systems</a>.
-</p>
+Gauthier Picard teaches Artificial Intelligence, Multi-Agent Systems and DCOPs for Master-level students for more than 15 years, in different institutions and schools (Université de Lyon, Université de Toulouse, Ecole des Mines de Saint-Etienne). He has also coordinated the International Master Track on Cyber-Physical and Social System. Some sample slides and pratical works are available online, on DCSP and DCOP, Programming DCSP with Jason or Self-organization in Multi-Agent Systems. Finally, he presented tutorials on DCOPs at several conferences and summer schools (AAMAS'18, EASSS'18, AAMAS'19, PFIA'19, ECAI'20, PFIA'20).</p>
 </div>
 </div>
 
 <div id="outline-pierre" class="outline-3">
-<h3 id="pierre"><a id="orgc492bf9"></a>Pierre Rust</h3>
-<div class="outline-text-3" id="text-pierre">
+<h3 id="pierre"><a id="orgc492bf9"></a>Filippo Bistaffa</h3>
+<div class="outline-text-3" id="text-filippo">
 <p>
-<b>Pierre Rust</b> received his PhD in Computer Science from the University of Lyon in 2018. He is a software developer and computer science researcher, at Orange Labs. After more than 10 years of experience as a developer in the industry, he is now focusing on research; his main topics of interest are distributed computing, artificial intelligence and the impact of software on sustainability. He also enjoys helping fellow developers by sharing knowledge and occasionally giving lectures, notably at <a href="http://www.emse.fr/~picard/cours/iot">Mines Saint-Etienne</a>, and teaches Python language at Orange.
+<b>Filippo Bistaffa</b> received the Ph.D. (Doctor Europæus) in Computer Science from the University of Verona in 2016. He is currently a Post-Doctoral Research Fellow (former Marie Skłodowska-Curie Fellow) at the Artificial Intelligence Research Institute (IIIA-CSIC), Barcelona, Spain. His research interests comprise combinatorial optimization problems for realistic applications (such as shared mobility and team formation) and GPU computing.
+</p>
+<p>Filippo Bistaffa has been member of the Program Committee of the following: international AI conferences and workshops: AAAI (since 2017), AAMAS (since 2019), IJCAI (SPC, since 2021), ECAI (since 2018), GECCO (since 2019), EuMAS (since 2019), OPTMAS-DCR (now OptLearnMAS, since 2013).
+</p>
+<p>Since 2019, Filippo Bistaffa teaches a tutorial on ``Constrained Optimisation for Multi-Agent Systems'': Advanced Course on AI (ACAI) Summer School, Crete, Greece (2019) and European Agent Systems Summer School (EASSS), Porto, Portugal (2021).
 </p>
 </div>
 </div>
@@ -183,8 +187,8 @@ Gauthier Picard teaches <a href="http://www.emse.fr/~picard/cours/ai/">Artificia
 </div>
 <div id="postamble" class="status">
 <p class="author">Author: Gauthier Picard</p>
-<p class="email">Email: <a href="mailto:gauthier.picard@emse.fr">gauthier.picard@emse.fr</a></p>
-<p class="date">Created: 2020-05-27 Wed 14:56</p>
+<p class="email">Email: <a href="mailto:gauthier.picard@emse.fr">gauthier.picard@onera.fr</a></p>
+<p class="date">Created: 2022-01-18 Tue 08:56</p>
 <p class="validation"><a href="http://validator.w3.org/check?uri=referer">Validate</a></p>
 </div>
 </body>
