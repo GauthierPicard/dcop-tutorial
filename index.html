@@ -69,7 +69,7 @@ for the JavaScript code in this tag.
 <div id="content">
 <h1 class="title">Tutorial on Multi-Agent Distributed Constrained Optimization
 <br>
-<span class="subtitle">at AAMAS 2022, the 21st International Conference on Autonomous Agents and Multiagent Systems</span>
+	<span class="subtitle">at <a href="https://aamas2022-conference.auckland.ac.nz/" style="color:white">AAMAS 2022</a>, the 21st International Conference on Autonomous Agents and Multiagent Systems</span>
 </h1>
 <div id="table-of-contents">
 <h2>Table of Contents</h2>
@@ -89,9 +89,9 @@ for the JavaScript code in this tag.
 <div class="outline-text-2" id="text-short-description">
 <p>Teams of agents often have to coordinate their decisions in a distributed manner to achieve both individual and shared goals. Examples include service-oriented computing, sensor network problems, and smart devices coordination homes problems. Such a problem can be formalized and solved in different ways, but in general the multi-agent coordination process is non-trivial and NP-hard to solve.</p>
 <p>In this <i>Tutorial on Multi-Agent Distributed Constrained Optimization</i> we will discuss two fundamental approaches that have been proposed in the Multi-Agent Systems (MAS) literature to tackle coordination problems, one based on Distributed Constrained Optimization Problems (DCOPs) and one based on Coalition Formation (CF).</p>
-<p>In the first part, we will present an accessible and structured overview of the core concepts and models aout DCOPs. We will also expound the available optimal and suboptimal approaches to solve DCOPs. We will discuss recent extensions to the DCOP framework to capture agents acting in a dynamic environment and/or using asymmetric costs/rewards.</p>
+<p>In the first part, we will present an accessible and structured overview of the core concepts and models about DCOPs. We will also expound the available optimal and suboptimal approaches to solve DCOPs. </p>
 <p>In the second part, we will discuss a core concept used to model MAS, i.e., Characteristic Function Games (CFGs), and which optimal and approximated approaches are available to form coalitions in both unconstrained and constrained CFGs. We will conclude this part by establishing an interesting link between the first and the second part, showing how Constrained Optimization Problems (COPs) can also be used to solve CF problems.</p>
-<p>Finally, we will invite the attendance to model some sample problems coming from real applications, and discuss the relevant solutions methods. Some code and executable examples, developed using the python library pyDCOP, will be provided and analyzed. The tutorial will conclude with the most recurrent challenges and open questions.</p>
+<p>Finally, we will invite the attendance to model some sample problems coming from real applications, and discuss the relevant solutions methods. Some code and executable examples, from the python library pyDCOP, will be overviewed. The tutorial will conclude with the most recurrent challenges and open questions.</p>
 </div>
 </div>
 
@@ -106,52 +106,44 @@ The Tutorial on Multi-Agent Distributed Constrained Optimization is expected to 
 The overall programme is as follows:
 </p>
 <ol class="org-ol" type="I">
-	
+<li>Introduction and Motivations</li>
 <li>Theory [2h]
-<ol class="org-ol" type="1">
-    <li> Preliminaries
+<ol class="org-ol" type="1">	
+    <li> Distributed Constraint Optimization
     <ul>
-        <li> CSP and WCSP</li>
-        <li> Multiagent Systems</li>
-        <li> DCOP</li>
-        <li> Overview of Agents Interaction Graphs </li>
+        <li> Motivating Examples</li>
+        <li> Preliminaries</li>
+        <li> DCOP Model(s)</li>
+        <li> DCOP Algorithms</li>
     </ul>
     </li>
-	<li> DCOP Algorithms
+    <li> Coalition Formation on MAS
     <ul>
-        <li> Overview and Categorization  </li> 
-        <li> Introduction to Search-based Algorithms (SyncBB, DSA and MGM)</li>
-        <li> Introduction to Inference-based Algorithms (DPOP, Max-Sum)</li>
-        <li> Critical Overview of DCOP Algorithms</li>
+	<li> Characteristic Function Games (CFGs)</li>
+        <li>Coalition Structure Generation (CSG)</li>
     </ul>
-	</li>
-	<li> DCOP Extensions
-    <ul>
-		<li>Asymmetric DCOP</li>
-        <li>Dynamic DCOP</li>
-    </ul>
-	</li>
+    </li>
 </ol>
 </li>
 <li> Practice [1h]
     <ol class="org-ol" type="1">
-    <li>Applications for Cooperative Multiagent Systems\footnote{Depending on the remaining time, between 2 and 5 applications will be discussed and illustrated}
+    <li>Real-World Applications
     <ul>
-        <li>Meetings Scheduling</li>
-        <li>Multi-Agent Task Allocation</li>
-        <li>Smart Device Scheduling in Smart Homes</li>
-        <li>Cooperative Satellite Constellation Scheduling</li>
-        <li>Shared Mobility</li>
+	<li>Self-configuration of IoT Devices</li>
+	<li>Observation Scheduling in Multi-Owner Constellations</li>
+	<li>Shared Mobility</li>
+        <li>Collective Energy Purchasing</li>
     </ul>
 	</li>
     <li>Programming examples with pyDCOP</li>
 	</ol>
 </li>
+<li>Conclusion and Wrap-up</li>
 </ol>
 
 <p>
 The practical session relies on an Open Source library that is available at <a href="https://github.com/Orange-OpenSource/">https://github.com/Orange-OpenSource/</a>
-pyDCOP. A virtual machine containing all the required libraries and software is provided for download.
+pyDCOP.
 </p>
 </div>
 </div>
@@ -198,7 +190,7 @@ For many year DCOP topic has been part of summer school and tutorial session of 
 Since 2020, he is Senior Research Fellow at ONERA, The French Aerospace Lab. His research focuses on cooperation and adaptation in multi-agent systems and distributed optimization with applications to aircraft design, ambient intelligence, and satellite constellation operations, and unmanned automated fleet operations.</p>
 <p>He has been in charge of the following organization activities: SASO (2016, PC Chair), SASO (2015, WS Chair), JFSMA (2015, Organization Chair), SASO (2014, Doctoral Consortium Chair), SASO (2012, Organization Chair), WI-IAT (2011, Demo Chair), ESAW'09 (2008-2009, Chair). He has also previously been member of the organization committees of the following events: ESAW (2004), JFSMA (2007), Web Intelligence Summer School (2009), EASSS (2010), MALLOW (2010), WI-IAT (2011).</p>
 <p>
-Gauthier Picard teaches Artificial Intelligence, Multi-Agent Systems and DCOPs for Master-level students for more than 15 years, in different institutions and schools (Université de Lyon, Université de Toulouse, Ecole des Mines de Saint-Etienne). He has also coordinated the International Master Track on Cyber-Physical and Social System. Some sample slides and pratical works are available online, on DCSP and DCOP, Programming DCSP with Jason or Self-organization in Multi-Agent Systems. Finally, he presented tutorials on DCOPs at several conferences and summer schools (AAMAS'18, EASSS'18, AAMAS'19, PFIA'19, ECAI'20, PFIA'20).</p>
+Gauthier Picard teaches Artificial Intelligence, Multi-Agent Systems and DCOPs for Master-level students for more than 15 years, in different institutions and schools (Université de Lyon, Université de Toulouse, Ecole des Mines de Saint-Etienne). He has also coordinated the International Master Track on Cyber-Physical and Social System. Some sample slides and pratical works are available online, on <a href="https://www.gauthier-picard.info/files/lecture-DCSP-2021.pdf">DCSP</a> and <a href="https://www.gauthier-picard.info/files/lecture-DCOP-2021.pdf">DCOP</a>, <a href="https://www.emse.fr/~picard/cours/3A/masterWI/dcsp/">Programming DCSP with Jason</a> or <a href="https://www.emse.fr/~picard/cours/3A/masterWI/coursSO.pdf">Self-organization in Multi-Agent Systems</a>. Finally, he presented tutorials on DCOPs at several conferences and summer schools (AAMAS'18, EASSS'18, AAMAS'19, PFIA'19, ECAI'20, PFIA'20).</p>
 </div>
 </div>
 
