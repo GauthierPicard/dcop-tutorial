@@ -70,7 +70,7 @@ for the JavaScript code in this tag.
 </head>
 <body>
 <div id="content">
-<h1 class="title">Tutorial on Multi-Agent Distributed Constrained Optimization
+<h1 class="title">Tutorial on Multi-Agent Optimization
 <br>
 	<span class="subtitle">at <a href="https://aamas2023.soton.ac.uk/" style="color:white">AAMAS 2023</a>, the 22nd International Conference on Autonomous Agents and Multiagent Systems</span>
 	</h1>
@@ -91,10 +91,11 @@ for the JavaScript code in this tag.
 <h2 id="short-description"><a id="org82e87e0"></a><span class="section-number-2">1</span> Short description</h2>
 <div class="outline-text-2" id="text-short-description">
 <p>Teams of agents often have to coordinate their decisions in a distributed manner to achieve both individual and shared goals. Examples include service-oriented computing, sensor network problems, and smart devices coordination homes problems. Such a problem can be formalized and solved in different ways, but in general the multi-agent coordination process is non-trivial and NP-hard to solve.</p>
-<p>In this <i>Tutorial on Multi-Agent Distributed Constrained Optimization</i> we will discuss two fundamental approaches that have been proposed in the Multi-Agent Systems (MAS) literature to tackle coordination problems, one based on Distributed Constrained Optimization Problems (DCOPs) and one based on Coalition Formation (CF).</p>
-<p>In the first part, we will present an accessible and structured overview of the core concepts and models about DCOPs. We will also expound the available optimal and suboptimal approaches to solve DCOPs. </p>
+<p>In this <i>Tutorial on Multi-Agent Optimization</i> we will discuss two fundamental approaches that have been proposed in the Multi-Agent Systems (MAS) literature to tackle coordination problems, one based on Distributed Constrained Optimization Problems (DCOPs) and one based on Coalition Formation (CF).</p>
+<p>In the first part, we will present an accessible and structured overview of the core concepts and models about DCOPs. We will also expound the available optimal and suboptimal approaches to solve DCOPs.</p>
 <p>In the second part, we will discuss a core concept used to model MAS, i.e., Characteristic Function Games (CFGs), and which optimal and approximated approaches are available to form coalitions in both unconstrained and constrained CFGs. We will conclude this part by establishing an interesting link between the first and the second part, showing how Constrained Optimization Problems (COPs) can also be used to solve CF problems.</p>
-<p>Finally, we will invite the attendance to model some sample problems coming from real applications, and discuss the relevant solutions methods. Some code and executable examples, from the python library pyDCOP, will be overviewed. The tutorial will conclude with the most recurrent challenges and open questions.</p>
+<p>Finally, we will invite the attendance to model some sample problems coming from real applications, and discuss the relevant solutions methods. %Some code and executable examples, from the python library pyDCOP, will be overviewed. 
+The tutorial will conclude with the most recurrent challenges and open questions.</p>
 </div>
 </div>
 
@@ -102,25 +103,26 @@ for the JavaScript code in this tag.
 <h2 id="Outline"><a id="org70dc8af"></a><span class="section-number-2">2</span> Outline</h2>
 <div class="outline-text-2" id="text-Outline">
 <p>
-The Tutorial on Multi-Agent Distributed Constrained Optimization is expected to be a half-day tutorial alternates both theoretical and practical concepts on DCOP models, algorithms and applications. Some time is devoted to apply these concepts on sample applications using a python library.</p>
-<p>This tutorial is planned to be mostly virtual, but can be hybrid. Being used to teach this tutorial for the past few years (especially during pandemic situations), the presenters are ready to run the event in a full virtual mode.</p>
+The Tutorial on Multi-Agent Distributed Constrained Optimization is expected to be a half-day tutorial alternates both theoretical and practical concepts on DCOP models, algorithms and applications. Some time is devoted to apply these concepts on sample applications.</p>
+<p>This tutorial is planned to be in person.</p>
 
 <p>
 The overall programme is as follows:
 </p>
 <ol class="org-ol" type="I">
-<li>Introduction and Motivations</li>
-<li>Theory [2h]
+<li>Introduction and Motivations [5 min]</li>
+<li>Theory [100 min]
 <ol class="org-ol" type="1">	
-    <li> Distributed Constraint Optimization
+    <li> Distributed Constraint Optimization [50 min]
     <ul>
         <li> Motivating Examples</li>
         <li> Preliminaries</li>
         <li> DCOP Model(s)</li>
         <li> DCOP Algorithms</li>
+        <li> Extensions</li>
     </ul>
     </li>
-    <li> Coalition Formation on MAS
+    <li> Coalition Formation on MAS [50 min]
     <ul>
 	<li> Characteristic Function Games (CFGs)</li>
         <li>Coalition Structure Generation (CSG)</li>
@@ -128,26 +130,17 @@ The overall programme is as follows:
     </li>
 </ol>
 </li>
-<li> Practice [1h]
+<li>Break [10 min]</li>
+<li> Real World Applications [60 min]
     <ol class="org-ol" type="1">
-    <li>Real-World Applications
-    <ul>
-	<li>Self-configuration of IoT Devices</li>
+    	<li>Self-configuration of IoT Devices</li>
 	<li>Observation Scheduling in Multi-Owner Constellations</li>
 	<li>Shared Mobility</li>
         <li>Collective Energy Purchasing</li>
-    </ul>
-	</li>
-    <li>Programming examples with pyDCOP</li>
-	</ol>
+   </ol>
 </li>
-<li>Conclusion and Wrap-up</li>
+<li>Conclusion and Wrap-up [5 min]</li>
 </ol>
-
-<p>
-The practical session relies on an Open Source library that is available at <a href="https://github.com/Orange-OpenSource/">https://github.com/Orange-OpenSource/</a>
-pyDCOP.
-</p>
 </div>
 </div>
 
@@ -158,9 +151,6 @@ pyDCOP.
 The slides presented during the tutorial are available <a href="aamas22tutorial.pdf">here</a>
 </p>
 
-<p>
-Full online documentation for pyDCOP is available here : <a href="https://pydcop.readthedocs.io">https://pydcop.readthedocs.io</a> 
-</p>
 </div>
 </div>
 
@@ -185,6 +175,20 @@ For many year DCOP topic has been part of summer school and tutorial session of 
 <div class="outline-text-2" id="text-organizers">
 </div>
 
+<div id="outline-filippo" class="outline-3">
+<h3 id="pierre"><a id="orgc492bf9"></a>Filippo Bistaffa</h3>
+<div class="outline-text-3" id="text-filippo">
+<p>
+<a href="https://filippobistaffa.github.io/"><b>Roie Zivan</b></a> received the Ph.D. (Doctor Europæus) in Computer Science from the University of Verona in 2016. He is currently a researcher at the Artificial Intelligence Research Institute (IIIA-CSIC), Barcelona, Spain. His research interests comprise combinatorial optimization problems for realistic applications (such as shared mobility and team formation) and GPU computing.</p>
+<p>
+Filippo Bistaffa has been member of the Program Committee of the following: international AI conferences and workshops: AAAI (since 2017), AAMAS (since 2019), IJCAI (SPC, since 2021), ECAI (since 2018), GECCO (since 2019), EuMAS (since 2019), OPTMAS-DCR (now OptLearnMAS, since 2013).
+</p>
+<p>
+Since 2019, Filippo Bistaffa teaches a tutorial on ``Constrained Optimisation for Multi-Agent Systems'': AAMAS (2022), Advanced Course on AI (ACAI) Summer School, Crete, Greece (2019) and European Agent Systems Summer School (EASSS), Porto, Portugal (2021).
+</p>
+</div>
+
+
 <div id="outline-gauthier" class="outline-3">
 <h3 id="gauthier"><a id="orgd8d1d82"></a>Gauthier Picard</h3>
 <div class="outline-text-3" id="text-gauthier">
@@ -193,28 +197,26 @@ For many year DCOP topic has been part of summer school and tutorial session of 
 Since 2020, he is Senior Research Fellow at ONERA, The French Aerospace Lab. His research focuses on cooperation and adaptation in multi-agent systems and distributed optimization with applications to aircraft design, ambient intelligence, and satellite constellation operations, and unmanned automated fleet operations.</p>
 <p>He has been in charge of the following organization activities: SASO (2016, PC Chair), SASO (2015, WS Chair), JFSMA (2015, Organization Chair), SASO (2014, Doctoral Consortium Chair), SASO (2012, Organization Chair), WI-IAT (2011, Demo Chair), ESAW'09 (2008-2009, Chair). He has also previously been member of the organization committees of the following events: ESAW (2004), JFSMA (2007), Web Intelligence Summer School (2009), EASSS (2010), MALLOW (2010), WI-IAT (2011).</p>
 <p>
-Gauthier Picard teaches Artificial Intelligence, Multi-Agent Systems and DCOPs for Master-level students for more than 15 years, in different institutions and schools (Université de Lyon, Université de Toulouse, Ecole des Mines de Saint-Etienne). He has also coordinated the International Master Track on Cyber-Physical and Social System. Some sample slides and pratical works are available online, on <a href="https://www.gauthier-picard.info/files/lecture-DCSP-2021.pdf">DCSP</a> and <a href="https://www.gauthier-picard.info/files/lecture-DCOP-2021.pdf">DCOP</a>, <a href="https://www.emse.fr/~picard/cours/3A/masterWI/dcsp/">Programming DCSP with Jason</a> or <a href="https://www.emse.fr/~picard/cours/3A/masterWI/coursSO.pdf">Self-organization in Multi-Agent Systems</a>. Finally, he presented tutorials on DCOPs at several conferences and summer schools (AAMAS'18, EASSS'18, AAMAS'19, PFIA'19, ECAI'20, PFIA'20).</p>
+Gauthier Picard teaches Artificial Intelligence, Multi-Agent Systems and DCOPs for Master-level students for more than 15 years, in different institutions and schools (Université de Lyon, Université de Toulouse, Ecole des Mines de Saint-Etienne). He has also coordinated the International Master Track on Cyber-Physical and Social System. Some sample slides and pratical works are available online, on DCSP and DCOP, Programming DCSP with Jason or Self-organization in Multi-Agent Systems. Finally, he presented tutorials on DCOPs at several conferences and summer schools (AAMAS'18, EASSS'18, AAMAS'19, PFIA'19, ECAI'20, PFIA'20, AAMAS'22).</p>
 </div>
 </div>
 
-<div id="outline-pierre" class="outline-3">
-<h3 id="pierre"><a id="orgc492bf9"></a>Filippo Bistaffa</h3>
-<div class="outline-text-3" id="text-filippo">
+
+
+<div id="outline-roie" class="outline-3">
+<h3 id="roie"><a id="orgc492bfa"></a>Roie Zivan</h3>
+<div class="outline-text-3" id="text-roie">
 <p>
-<a href="https://filippobistaffa.github.io/"><b>Filippo Bistaffa</b></a> received the Ph.D. (Doctor Europæus) in Computer Science from the University of Verona in 2016. He is currently a Post-Doctoral Research Fellow (former Marie Skłodowska-Curie Fellow) at the Artificial Intelligence Research Institute (IIIA-CSIC), Barcelona, Spain. His research interests comprise combinatorial optimization problems for realistic applications (such as shared mobility and team formation) and GPU computing.
-</p>
-<p>Filippo Bistaffa has been member of the Program Committee of the following: international AI conferences and workshops: AAAI (since 2017), AAMAS (since 2019), IJCAI (SPC, since 2021), ECAI (since 2018), GECCO (since 2019), EuMAS (since 2019), OPTMAS-DCR (now OptLearnMAS, since 2013).
-</p>
-<p>Since 2019, Filippo Bistaffa teaches a tutorial on "Constrained Optimisation for Multi-Agent Systems": Advanced Course on AI (ACAI) Summer School, Crete, Greece (2019) and European Agent Systems Summer School (EASSS), Porto, Portugal (2021).
-</p>
+<a href="https://tzin.bgu.ac.il/~zivanr/"><b>Filippo Bistaffa</b></a> is an Associate Professor  in the Industrial Engineering and Management department in Ben-Gurion University of the Negev. He is a PhD. in computer science and specifies in Distributed Artificial Intelligence. His early work focused on concurrent search algorithms for solving distributed constraint problems. This work included the design of innovative algorithms and introduction of search techniques that were found successful in centralized search to distributed search. This line of work resulted in publications in top AI journals such as AI journal, JAIR and Constraints. Between the years 2008 and 2010, Dr. Zivan was in a post-doc position in the robotics institute in Carnegie Mellon University, advised by Prof. Katia Sycara. His work at that time included the design of distributed models for representing groups of mobile sensing agents. This ongoing work has produced a number of conference papers (IAT 2009, AAMAS 2010, AAMAS 2014) and two journal papers (JAAMAS 2015, EAAI 2018). His work includes the investigation of Belief propagation algorithms, Partial cooperation models and applicative implementation of multi agent optimization models and algorithms.</p>
 </div>
+
 </div>
 </div>
 </div>
 <div id="postamble" class="status">
 <p class="author">Author: Gauthier Picard</p>
 <p class="email">Email: <a href="mailto:gauthier.picard@emse.fr">gauthier.picard@onera.fr</a></p>
-<p class="date">Created: 2022-01-18 Tue 08:56</p>
+<p class="date">Created: 2023-01-03 Tue 08:56</p>
 </div>
 </body>
 </html>
