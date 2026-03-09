@@ -4,7 +4,7 @@
 <!-- 2020-05-27 Wed 14:56 -->
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
-<title>Tutorial on Multi-Agent Distributed Constrained Optimization</title>
+<title>Tutorial on Optimization Techniques for Agent Coordination</title>
 <meta name="generator" content="Org mode" />
 <meta name="author" content="Gauthier Picard" />
 <meta property="og:image" content="images/tutorial_dcop.png" />
@@ -70,9 +70,9 @@ for the JavaScript code in this tag.
 </head>
 <body>
 <div id="content">
-<h1 class="title">Tutorial on Multi-Agent Optimization
+<h1 class="title">Tutorial on Optimization Techniques for Agent Coordination
 <br>
-	<span class="subtitle">at <a href="https://www.aamas2024-conference.auckland.ac.nz/" style="color:white">AAMAS 2024</a>, the 23rd International Conference on Autonomous Agents and Multiagent Systems</span>
+	<span class="subtitle">at <a href="https://cyprusconferences.org/aamas2026/" style="color:white">AAMAS 2026</a>, the 25th International Conference on Autonomous Agents and Multiagent Systems</span>
 	</h1>
 <div id="table-of-contents">
 <h2>Table of Contents</h2>
@@ -91,9 +91,10 @@ for the JavaScript code in this tag.
 <h2 id="short-description"><a id="org82e87e0"></a><span class="section-number-2">1</span> Short description</h2>
 <div class="outline-text-2" id="text-short-description">
 <p>Teams of agents often have to coordinate their decisions in a distributed manner to achieve both individual and shared goals. Examples include service-oriented computing, sensor network problems, and smart devices coordination homes problems. Such a problem can be formalized and solved in different ways, but in general the multi-agent coordination process is non-trivial and NP-hard to solve.</p>
-<p>In this <i>Tutorial on Multi-Agent Optimization</i> we will discuss two fundamental approaches that have been proposed in the Multi-Agent Systems (MAS) literature to tackle coordination problems, one based on Distributed Constrained Optimization Problems (DCOPs) and one based on Coalition Formation (CF).</p>
-<p>In the first part, we will present an accessible and structured overview of the core concepts and models about DCOPs. We will also expound the available optimal and suboptimal approaches to solve DCOPs.</p>
-<p>In the second part, we will discuss a core concept used to model MAS, i.e., Characteristic Function Games (CFGs), and which optimal and approximated approaches are available to form coalitions in both unconstrained and constrained CFGs. We will conclude this part by establishing an interesting link between the first and the second part, showing how Constrained Optimization Problems (COPs) can also be used to solve CF problems.</p>
+<p>In this <i>Tutorial on Optimization Techniques for Agent Coordination</i> we will discuss two fundamental approaches that have been proposed in the Multi-Agent Systems (MAS) literature to tackle coordination problems, one based on Distributed Constrained Optimization Problems (DCOPs) and one based on Coalition Formation (CF).</p>
+<p>In the first part, we will present an accessible and structured overview of the core concepts and models of DCOPs. We will also expound on the available optimal and suboptimal approaches to solving DCOPs.</p>
+<p>In the second part, we will present a short overview on auctions for coordinating allocation problem, and focus on consensus-based algorithm to implement decentralized auctions.</p>
+<p>In the third part, we will discuss a core concept used to model MAS, i.e., Characteristic Function Games (CFGs), and which optimal and approximated approaches are available to form coalitions in both unconstrained and constrained CFGs. We will conclude this part by establishing an interesting link between the first and the second part, showing how Constrained Optimization Problems (COPs) can also be used to solve CF problems.</p>
 <p>Finally, we will invite the attendance to model some sample problems coming from real applications, and discuss the relevant solutions methods. 
 The tutorial will conclude with the most recurrent challenges and open questions.</p>
 </div>
@@ -103,45 +104,51 @@ The tutorial will conclude with the most recurrent challenges and open questions
 <h2 id="Outline"><a id="org70dc8af"></a><span class="section-number-2">2</span> Outline</h2>
 <div class="outline-text-2" id="text-Outline">
 <p>
-The Tutorial on Multi-Agent Distributed Constrained Optimization is expected to be a half-day tutorial alternates both theoretical and practical concepts on DCOP models, algorithms and applications. Some time is devoted to apply these concepts on sample applications.</p>
+The <i>Tutorial on Optimization Techniques for Agent Coordination</i> is expected to be a half-day tutorial alternates both theoretical and practical concepts on DCOP models, algorithms and applications. Some time is devoted to apply these concepts on sample applications.</p>
 <p>This tutorial is planned to be in person.</p>
 
 <p>
 The overall programme is as follows:
 </p>
-<ol class="org-ol" type="I">
-<li>Introduction and Motivations [5 min]</li>
-<li>Theory [100 min]
-<ol class="org-ol" type="1">	
-    
-    <li> Coalition Formation on MAS [50 min]
-    <ul>
-	<li> Characteristic Function Games (CFGs)</li>
-        <li>Coalition Structure Generation (CSG)</li>
-    </ul>
-    </li>
-    <li> Distributed Constraint Optimization [50 min]
-    <ul>
-        <li> Motivating Examples</li>
-        <li> Preliminaries</li>
-        <li> DCOP Model(s)</li>
-        <li> DCOP Algorithms</li>
-        <li> Extensions</li>
-    </ul>
-    </li>
-</ol>
-</li>
-<li>Break [10 min]</li>
-<li> Real World Applications [60 min]
+	<ol class="org-ol" type="I">
+  <li><strong>Introduction and Motivations</strong> [5 min]</li>
+  <li><strong>Theory</strong> [90 min]
     <ol class="org-ol" type="1">
-    	<li>Shared Mobility</li>
-        <li>Collective Energy Purchasing</li>
-        <li>Self-configuration of IoT Devices</li>
-	<li>Observation Scheduling in Multi-Owner Constellations</li>
-	
-   </ol>
-</li>
-<li>Conclusion and Wrap-up [5 min]</li>
+      <li>Distributed Constraint Optimization [30 min]
+        <ul>
+          <li>Motivating Examples</li>
+          <li>Preliminaries</li>
+          <li>DCOP Model</li>
+          <li>DCOP Algorithms</li>
+          <li>Extensions</li>
+        </ul>
+      </li>
+      <li>Decentralized Auctions [30 min]
+        <ul>
+          <li>Motivating Examples</li>
+          <li>Preliminaries</li>
+          <li>Allocation Model</li>
+          <li>Consensus Algorithms</li>
+        </ul>
+      </li>
+      <li>Coalition Formation on MAS [30 min]
+        <ul>
+          <li>Characteristic Function Games</li>
+          <li>Coalition Structure Generation</li>
+        </ul>
+      </li>
+    </ol>
+  </li>
+  <li><strong>Break</strong> [10 min]</li>
+  <li><strong>Real World Applications</strong> [60 min]
+    <ol class="org-ol" type="1">
+      <li>Observation Scheduling in Multi-Owner Constellations</li>
+      <li>Shared Mobility</li>
+      <li>Multi-Agent Pick-up and Delivery</li>
+    </ol>
+  </li>
+  <li><strong>Discussion about Multi-Agent Optimization and Generative AI</strong> [10 min]</li>
+  <li><strong>Conclusions and Wrap-up</strong> [5 min]</li>
 </ol>
 </div>
 </div>
@@ -150,7 +157,7 @@ The overall programme is as follows:
 <h2 id="contents"><a id="org20e602e"></a><span class="section-number-2">3</span> Contents</h2>
 <div class="outline-text-2" id="text-contents">
 <p>
-The slides presented during the tutorial are available <a href="aamas24tutorial.pdf">here</a>
+The slides presented during the tutorial will be available <a href="aamas26tutorial.pdf">here</a>
 </p>
 
 </div>
